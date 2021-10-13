@@ -30,14 +30,6 @@ public class Rectangle extends Figure {
         return side2;
     }
 
-    public double getArea() {
-        return area;
-    }
-
-    public double getPerimeter() {
-        return perimeter;
-    }
-
     @Override
     protected void perimeterCalculation() {
         perimeter = side1 * 2 + side2 * 2;
@@ -59,7 +51,8 @@ public class Rectangle extends Figure {
 
     @Override
     public int hashCode() {
-        return Objects.hash(side1, side2);
+        if (side1 > side2) return Objects.hash(side1, side2);
+        else return Objects.hash(side2, side1);
     }
 
     @Override

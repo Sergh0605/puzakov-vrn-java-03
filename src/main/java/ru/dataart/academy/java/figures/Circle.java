@@ -34,16 +34,6 @@ public final class Circle extends Figure {
     }
 
     @Override
-    public double getPerimeter() {
-        return perimeter;
-    }
-
-    @Override
-    public double getArea() {
-        return area;
-    }
-
-    @Override
     protected void perimeterCalculation() {
         perimeter = 2 * Math.PI * radius;
     }

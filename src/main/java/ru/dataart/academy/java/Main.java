@@ -5,12 +5,10 @@ import ru.dataart.academy.java.figures.Figure;
 import ru.dataart.academy.java.figures.Rectangle;
 import ru.dataart.academy.java.figures.Square;
 
-import java.util.Random;
-
 public class Main{
     public static void main(String[] args) {
         Figure[] figures = getFiguresArray();
-        System.out.print("Sum of arrays " + Calculator.getSumOfAreas(figures));
+        System.out.println("Sum of arrays " + Calculator.getSumOfAreas(figures));
     }
 
     public static Figure[] getFiguresArray() {
