@@ -8,7 +8,7 @@ import ru.dataart.academy.java.figures.Square;
 public class Main{
     public static void main(String[] args) {
         Figure[] figures = getFiguresArray();
-        System.out.println("Sum of arrays " + Calculator.getSumOfAreas(figures));
+        System.out.println("Sum of areas " + Calculator.getSumOfAreas(figures));
     }
 
     public static Figure[] getFiguresArray() {
